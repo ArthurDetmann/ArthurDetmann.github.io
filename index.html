@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfólio de Arthur Detmann Mattos: projetos de IA e automação.">
+
+<title>Portfólio Arthur Detmann</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+:root{--red:#EA1D2C;--red-d:#B5121E;--rose:#FFF1F2;--ink:#3E3E3E;--muted:#717171;--line:#F2D3D6;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:#f3eeee}
+body{background:#f3eeee;color-scheme:light}
+.page{max-width:1024px;margin:0 auto;background:#fff;overflow:hidden}
+body{font-family:"Nunito Sans","Segoe UI",system-ui,sans-serif;color:var(--ink);font-size:15px;line-height:1.6}
+h1,h2,h3,.d{font-family:"Nunito","Segoe UI",system-ui,sans-serif}
+.pad{padding:0 64px}
+
+/* capa */
+.hero{background:var(--red);color:#fff;height:600px;position:relative;overflow:hidden}
+.hero .txt{position:absolute;left:64px;top:96px;z-index:2}
+.hero .k{font-family:"Nunito","Segoe UI",system-ui,sans-serif;font-weight:800;font-size:20px;letter-spacing:.32em}
+.hero h1{font-weight:900;font-size:118px;line-height:.92;letter-spacing:-.01em;margin-top:14px}
+.hero .sub{font-family:"Nunito","Segoe UI",system-ui,sans-serif;font-weight:700;font-size:20px;margin-top:26px;line-height:1.35}
+.hero svg{position:absolute;right:-40px;top:40px;z-index:1}
+
+/* apresentação */
+.hello{padding:84px 64px 90px;display:grid;grid-template-columns:1fr 300px;gap:56px;align-items:start}
+.hello h2{font-weight:900;font-size:54px;color:var(--red);line-height:1}
+.hello .body{margin-top:28px;display:grid;gap:14px;text-align:justify}
+.hello .photo{display:block;width:300px;height:380px;object-fit:cover;border-radius:28px;margin-top:84px;box-shadow:14px 14px 0 var(--red)}
+
+/* projetos */
+.proj{padding:72px 64px 80px}
+.proj.alt{background:var(--rose)}
+.ph{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.ph h3{font-weight:900;font-size:48px;line-height:.98;color:var(--red);text-transform:uppercase;letter-spacing:-.005em}
+.ph h3 small{display:block;font-weight:600;font-size:22px;color:var(--ink);text-transform:none;letter-spacing:0;margin-top:6px}
+.ph .per{font-size:13px;color:var(--muted);margin-top:8px;font-style:italic}
+.tools{text-align:right;font-family:"Nunito","Segoe UI",system-ui,sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;color:var(--red);text-transform:uppercase;line-height:1.75;white-space:nowrap}
+.desc{max-width:600px;margin-top:22px;text-align:justify}
+.img{display:block;width:100%;border-radius:16px}
+.cap{font-family:"Nunito","Segoe UI",system-ui,sans-serif;font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.g1{margin-top:30px}
+.g2{display:grid;gap:22px;margin-top:22px}
+.c2{grid-template-columns:1fr 1fr}
+.c-det{grid-template-columns:540px 1fr}
+.c-cla{grid-template-columns:1fr 210px;align-items:start}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.facts div{background:#fff;border-radius:16px;padding:18px 16px;border:1.5px solid var(--line)}
+.facts b{display:block;font-family:"Nunito","Segoe UI",system-ui,sans-serif;font-weight:900;font-size:36px;color:var(--red);line-height:1}
+.facts span{display:block;font-size:13px;margin-top:8px;line-height:1.4}
+.done{margin-top:12px;background:#fff;border-radius:16px;padding:16px 18px;border:1.5px solid var(--line);font-size:13px;line-height:1.5}
+.done b{font-family:"Nunito","Segoe UI",system-ui,sans-serif;font-weight:800;color:var(--red);font-size:12px;letter-spacing:.14em;display:block;margin-bottom:4px}
+.det .img{background:#0b1322}
+.phone{border-radius:22px;border:5px solid var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chips span{font-family:"Nunito","Segoe UI",system-ui,sans-serif;font-weight:700;font-size:12px;background:#fff;color:var(--red);border:1.5px solid var(--red);border-radius:999px;padding:4px 12px}
+.proj:not(.alt) .chips span{background:var(--rose);border-color:var(--rose)}
+
+/* rodapé */
+.foot{background:var(--red);color:#fff;padding:64px 64px 70px}
+.foot h2{font-weight:900;font-size:48px;line-height:1}
+.cols{display:grid;grid-template-columns:1.1fr 1.3fr 1fr;gap:36px;margin-top:36px}
+.cols h4{font-family:"Nunito","Segoe UI",system-ui,sans-serif;font-weight:800;font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
+.cols ul{list-style:none;margin-top:10px;display:grid;gap:9px;font-size:14px;line-height:1.4}
+.cols b{font-family:"Nunito","Segoe UI",system-ui,sans-serif;font-weight:800;display:block;font-size:15px}
+
+@media (max-width:900px){
+ .pad,.hello,.proj,.foot{padding-left:max(20px, env(safe-area-inset-left,0px));padding-right:max(20px, env(safe-area-inset-right,0px))}
+ .hero{height:auto;padding:64px max(20px, env(safe-area-inset-right,0px)) 72px max(20px, env(safe-area-inset-left,0px))}
+ .hero .txt{position:relative;left:0;top:0}
+ .hero h1{font-size:clamp(52px,15vw,96px)}
+ .hero svg{opacity:.35;right:-160px;top:auto;bottom:-120px}
+ .hello{grid-template-columns:1fr;gap:28px;padding-top:56px;padding-bottom:56px}
+ .hello .photo{margin-top:0;width:100%;max-width:300px;height:auto;aspect-ratio:300/380}
+ .hello .body{text-align:left}
+ .hello h2{font-size:42px}
+ .proj{padding-top:52px;padding-bottom:56px}
+ .ph{flex-direction:column;gap:12px}
+ .ph h3{font-size:38px}
+ .tools{text-align:left;white-space:normal}
+ .desc{text-align:left}
+ .c2,.c-det,.c-cla{grid-template-columns:1fr}
+ .c-cla .phone{max-width:240px}
+ .cols{grid-template-columns:1fr;gap:24px}
+ .foot h2{font-size:38px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<section class="hero">
+  <div class="txt">
+    <div class="k">PORTFÓLIO</div>
+    <h1>ARTHUR<br>DETMANN</h1>
+    <div class="sub">Graduando em<br>Ciência da Computação</div>
+  </div>
+  <svg width="560" height="560" viewBox="0 0 560 560" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <g opacity=".22" stroke-width="1.2">
+      <path d="M20 120 L540 120 M20 220 L540 220 M20 320 L540 320 M20 420 L540 420 M120 20 L120 540 M220 20 L220 540 M320 20 L320 540 M420 20 L420 540"/>
+    </g>
+    <g opacity=".55" stroke-width="2.2">
+      <path d="M60 470 C 140 430, 150 330, 230 320 S 330 360, 360 280 S 380 150, 470 120"/>
+      <path d="M100 160 C 170 190, 200 250, 230 320" stroke-dasharray="6 9"/>
+      <path d="M360 280 C 420 300, 470 360, 500 430" stroke-dasharray="6 9"/>
+    </g>
+    <g stroke-width="2.6">
+      <circle cx="60" cy="470" r="9" fill="#EA1D2C"/>
+      <circle cx="230" cy="320" r="9" fill="#EA1D2C"/>
+      <circle cx="360" cy="280" r="9" fill="#EA1D2C"/>
+      <circle cx="100" cy="160" r="6" fill="#EA1D2C"/>
+      <circle cx="500" cy="430" r="6" fill="#EA1D2C"/>
+      <path d="M470 120 m-18 -6 a18 18 0 1 1 36 0 c0 16 -18 34 -18 34 s-18 -18 -18 -34z" fill="#fff"/>
+      <circle cx="470" cy="114" r="6" fill="#EA1D2C" stroke="none"/>
+    </g>
+    <g opacity=".5" stroke-width="1.6">
+      <circle cx="470" cy="114" r="46"/>
+      <circle cx="470" cy="114" r="78"/>
+    </g>
+  </svg>
+</section>
+
+<section class="hello">
+  <div>
+    <h2>OLÁ, IFOOD!</h2>
+    <div class="body">
+      <p>Sou estudante do 6º período de Ciência da Computação na UNIAN, em Niterói, com conclusão prevista para o fim de 2027, e curso a formação Especialista em IA pela Alura. Comecei a carreira em vendas no varejo e hoje trabalho na operação de uma agência de viagens premium, em um ambiente de padrão erro zero, onde participo da criação e da manutenção de agentes de IA e de automações.</p>
+      <p>Foi nessa rotina que aprendi a tratar um processo como sistema: cada etapa documentada, cada informação conferida na origem e nada assumido por conta própria. Os projetos deste portfólio nasceram de problemas reais do meu dia a dia, e em cada um procurei entender quem vai usar, resolver o que mais pesa e deixar claro o que já funciona e o que ainda está em teste.</p>
+      <p>Na trilha AI Builder do Gen AI, quero levar esse jeito de trabalhar para Operações e Logística e para Planejamento Estratégico, usando a IA como alavanca para construir soluções de ponta a ponta.</p>
+    </div>
+  </div>
+  <img class="photo" src="foto.jpg" alt="Arthur Detmann">
+</section>
+
+<section class="proj alt det">
+  <div class="ph">
+    <div>
+      <h3>Projeto Det<small>Assistente de voz pessoal</small></h3>
+      <div class="per">*projeto pessoal · 2026</div>
+    </div>
+    <div class="tools">Claude Code<br>Whisper<br>Voz em streaming<br>API de tarefas</div>
+  </div>
+  <p class="desc">Neste projeto me desafiei a construir um assistente que vive no computador. Ele acorda com “oi Det”, conversa em português, controla o PC e ajuda nas tarefas do dia, sem custo além da assinatura do Claude que já existia. Aprendi a separar o que precisa de IA do que não precisa: comandos simples como volume, música e timers são resolvidos em menos de um segundo, sem gastar cota, e ações sensíveis como apagar arquivos ou enviar e-mail só acontecem depois de uma confirmação por voz.</p>
+  <img class="img g1" src="d_estados.jpg" alt="">
+  <div class="cap">Interface ouvindo, pensando e falando · captura real</div>
+  <div class="g2 c-det">
+    <div><img class="img" src="d_painel.jpg" alt=""><div class="cap">Painel de controle · captura real</div></div>
+    <div>
+      <div class="facts">
+        <div><b>R$ 0</b><span>além da assinatura já existente</span></div>
+        <div><b>&lt;1 s</b><span>para comandos simples do PC</span></div>
+        <div><b>2 a 3 s</b><span>para começar a responder por voz</span></div>
+        <div><b>24 h</b><span>ligado junto com o Windows</span></div>
+      </div>
+      <div class="done"><b>JÁ FUNCIONA</b>Chamamento com modelo próprio, memória, painel, controle do PC e tarefas por voz. Em teste: e-mail e agenda por voz.</div>
+    </div>
+  </div>
+</section>
+
+<section class="proj">
+  <div class="ph">
+    <div>
+      <h3>Gestão de<br>Fornecedores<small>Sistema de operação</small></h3>
+      <div class="per">*projeto de trabalho · 2026</div>
+    </div>
+    <div class="tools">Integração ClickUp<br>Base de dados<br>Câmbio diário<br>Curva ABC</div>
+  </div>
+  <p class="desc">O desafio deste projeto foi reunir em um só lugar tudo o que se sabe sobre cada fornecedor e ajudar a equipe a decidir quem contratar. A equipe continua trabalhando no ClickUp: o sistema lê as tarefas, grava cada contratação na ficha do fornecedor e soma gastos em uma só moeda. Na hora de contratar, a tela “Quem eu chamo?” compara experiência, nota, feedback e preço lado a lado. Aprendi sobre modelagem de dados, auditoria de alterações e controle de acesso por perfil.</p>
+  <img class="img g1" src="f_painel.jpg" alt="">
+  <div class="cap">Painel de gastos e contratações · dados fictícios</div>
+  <div class="g2 c2">
+    <div><img class="img" src="f_quem.jpg" alt=""><div class="cap">“Quem eu chamo?” · dados fictícios</div></div>
+    <div><img class="img" src="f_abc.jpg" alt=""><div class="cap">Curva ABC de fornecedores · dados fictícios</div></div>
+  </div>
+  <div class="chips"><span>Cadastro e busca</span><span>Histórico vindo do ClickUp e do e-mail</span><span>Comparação na contratação</span><span>Auditoria e desfazer</span></div>
+</section>
+
+<section class="proj alt">
+  <div class="ph">
+    <div>
+      <h3>Clar&amp;Thur<small>Planejador de viagens</small></h3>
+      <div class="per">*projeto pessoal · 2026</div>
+    </div>
+    <div class="tools">Supabase<br>OpenFreeMap<br>OSRM<br>Frankfurter</div>
+  </div>
+  <p class="desc">Neste projeto me aventurei em um aplicativo web completo, que reúne o mapa, o roteiro e o custo de uma viagem em um só lugar, no computador e no celular. É possível pesquisar lugares, marcar prioridades, montar o roteiro arrastando as cidades e ver o tempo e o custo de cada trecho, em euro e em real. Aprendi a integrar vários serviços externos, a proteger chaves em um servidor intermediário e a sincronizar a mesma viagem em tempo real entre aparelhos.</p>
+  <img class="img g1" src="c_roteiro.jpg" alt="">
+  <div class="cap">Roteiro com trajetos por tipo de transporte · viagem de exemplo</div>
+  <div class="g2 c-cla">
+    <div><img class="img" src="c_custos.jpg" alt=""><div class="cap">Custos em euro e real · valores ilustrativos</div></div>
+    <div><img class="img phone" src="c_celular.jpg" alt=""><div class="cap">Versão celular</div></div>
+  </div>
+</section>
+
+<section class="foot">
+  <h2>VAMOS CONVERSAR?</h2>
+  <div class="cols">
+    <div><h4>Formação</h4><ul><li><b>Ciência da Computação</b>UNIAN · 2024 a 2027</li><li><b>Especialista em IA</b>Alura · em andamento</li></ul></div>
+    <div><h4>Certificados</h4><ul><li><b>Fundamentos de IA</b>Alura</li><li><b>Pensamento computacional</b>Alura</li><li><b>Imersão Agentes de IA na Prática</b>Daxus</li><li><b>Missão Programação com IA do Zero</b>DevClub</li></ul></div>
+    <div><h4>Contato</h4><ul><li><b>E-mail</b>daer9776@gmail.com</li><li><b>LinkedIn</b>linkedin.com/in/arthur-detmann-mattos</li><li><b>Local</b>Niterói, RJ</li></ul></div>
+  </div>
+</section>
+</div>
+
+</body>
+</html>
